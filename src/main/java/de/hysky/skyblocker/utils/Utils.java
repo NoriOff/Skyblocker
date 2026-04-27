@@ -590,7 +590,6 @@ public class Utils {
 
 		client.gui.getChat().addMessage(message);
 		((ChatListenerAccessor) client.getChatListener()).invokeLogSystemMessage(message, Instant.now());
-		client.getNarrator().saySystemQueued(message);
 	}
 
 	public static UUID getUuid() {
